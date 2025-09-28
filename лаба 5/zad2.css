@@ -1,0 +1,42 @@
+
+.cl{
+    empty-cells: hide;
+}
+table{
+    border-collapse: 1px; 
+    border-spacing: 0cap;
+    color: white;
+    margin: auto;
+    text-align: center;
+
+}
+th, td {
+    border:1px ridge rgb(46, 32, 46);
+}
+td{
+    padding: 5px;
+}
+caption{
+    color: #00BFFF;
+    font-size: 1.2em;
+    text-align: center;
+}
+.str1{
+    background-color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 10px;
+}
+.stl1{
+    background-color: rgb(10, 217, 245);
+}
+.stl2{
+    background-color: purple;
+}
+.stl3{
+    background-color: rgb(3, 146, 3);
+}
+.lk{
+color: black;
+}

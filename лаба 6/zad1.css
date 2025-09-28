@@ -1,0 +1,108 @@
+h1{
+    text-align: center;
+}
+.bl{
+    color: blue;
+}
+.vl{
+    color: blueviolet;
+}
+.br{
+    color: brown;
+}
+.dp{
+    font-size: larger;
+    color: deeppink;
+    font-family: sans-serif;
+}
+.gn{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+.red{
+    color: red;
+    font-size: x-small;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 500;
+}
+td{
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+
+ul li{
+    background-image: url(cat.png);
+    background-repeat: no-repeat;
+    list-style: none;
+    background-position:  0 4px;
+    padding-left: 25px;
+    background-size: 20px; 
+}
+ul, li{
+    font-size: x-large;
+}
+body{
+    background-image: url(ffit.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+    background-size: 275px 275px;
+    background-clip: border-box;
+}
+.fimg{
+    float: left;
+    width: 25%;
+    height:25%;
+    padding-left: 25%;
+ 
+}
+.simg{
+    float: right;
+    width: 25%;
+    height: 25%;
+    padding-right: 25%;
+    
+}
+p, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.abz1{
+    margin-left: 50%;
+}
+.abz11{
+    padding-right: 25%;
+    text-align: justify;
+}
+.abz12{
+    text-align: justify;
+    padding-left:50%;
+    padding-right: 25%;
+}
+
+
+
+
+.abz2{
+    padding-left: 25%;
+}
+.abz22{
+    padding-left: 25%;
+    text-align: justify;
+}
+.abz222{
+    padding-left: 25%;
+}
+
+p{
+    text-indent: 25px;
+}

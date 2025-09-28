@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    width: 500px;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+    border: 1px solid black;
+
+}
+tbody tr:nth-child(odd) td:nth-child(even){
+    background-color: black;
+}
+tbody tr:nth-child(even) td:nth-child(odd){
+    background-color: rgb(10, 0, 0);
+}
+tbody tr:nth-child(9n+1) td:nth-child(n){
+    background-color: rgb(223, 169, 240);}
+tbody tr:nth-child(n) td:nth-child(9n+1){
+        background-color: rgb(223, 169, 240);
+}
+.hid1{
+    visibility: hidden;
+    border-color: white black black white;
+}
+.hid2{
+    visibility: hidden;
+    border-color: black white white black;
+}
+.hid3{
+    visibility: hidden;
+    border-color: black black white white;
+}
+.hid4{
+    visibility: hidden;
+    border-color: white white black black;
+}
+.zg{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(205, 225, 243);
+}
+.zd{
+    width: 25px;
+    height: 50px;
+    background-color: rgb(205, 225, 243);
+}

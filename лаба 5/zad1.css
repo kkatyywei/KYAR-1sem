@@ -1,0 +1,16 @@
+
+table{
+    border-collapse: collapse;
+    border: 3px solid black;
+    text-align: center;
+}
+
+th ,td {
+    border: 2px solid black;
+}
+.fline{
+    background-color: rgb(215, 108, 241);
+}
+.fcolon{
+    background-color: rgb(176, 176, 241);
+}
