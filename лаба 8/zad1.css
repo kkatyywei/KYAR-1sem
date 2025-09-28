@@ -1,0 +1,23 @@
+aside{
+    float:right;
+    margin: 0 1.5%;;
+    width: 15%;
+    font-size: 1.3em;
+}
+main{
+    margin: 45px;
+    max-width: 75%;
+}
+a.s1:link{
+    color: red;
+    text-decoration: none;
+}
+a.s2:visited{
+    color: #8B0000;
+}
+a.s3:hover{
+    color: green;
+}
+a.s4:active{
+    color:rgb(184, 134, 11);
+}

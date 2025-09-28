@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2vw;
+    height: 100vh;
+}
+div.grid>div{
+    padding: 1em;
+    background: rgb(234, 242, 249);
+    text-align: justify;
+}
+.zagolovok {
+    font-size: 65px;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+}
+.text{
+    font-size: 30px;
+    overflow-y: auto;
+}
+body{
+    overflow-y: hidden;
+}

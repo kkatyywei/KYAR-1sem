@@ -1,0 +1,225 @@
+$primary-bg-color: rgb(85, 181, 181);
+$secondary-bg-color: rgb(217, 243, 243);
+$border-color: black;
+$font-size: 18px;
+
+
+.container1 {
+  display: grid;
+  margin: 10px;
+  margin-bottom: 0;
+  grid-gap: 35px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: auto;
+  align-items: center;
+  margin-right: 35px;
+
+  .str {
+    padding: 7px 0;
+    border: 1px solid $border-color;
+    font-size: 15px;
+    text-align: center;
+    background-color: $primary-bg-color;
+  }
+
+  .logo {
+    grid-auto-rows: auto;
+    text-align: start;
+    padding-left: 45px;
+    border: 0;
+    background-color: none;
+  }
+
+  .logo > img {
+    height: 110px;
+    width: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.container2 {
+  display: grid;
+  margin: 7px;
+  max-width: 100%;
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+.txt {
+  border: 1px solid $border-color;
+  margin: 15px;
+  text-align: center;
+}
+
+.zagolovok1 {
+  background-color: $primary-bg-color;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  font-size: $font-size;
+  padding: 7px 0;
+}
+
+.container3 {
+  display: grid;
+  margin: 0px;
+  margin-left: 35px;
+  max-width: 100%;
+  grid-gap: 5px;  
+}
+
+.zagolovok2 {
+  background-color: $primary-bg-color;
+  grid-row: 1/2;
+  grid-column: 1/5;
+  font-size: $font-size;
+  padding: 7px 0;
+  border: 1px solid $border-color;
+  margin-right: 20px;
+}
+
+.ph {
+  width: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.ph > img {
+  width: 155px;
+  height: auto;
+}
+
+@for $i from 1 through 4 {
+  .ph#{$i} {
+    grid-column: #{$i} / #{$i+1};
+  }
+}
+
+.chast1 {
+  margin-top: 0;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-template-columns: 3fr 2fr;
+}
+
+.form {
+  margin-top: 15px;
+  margin-left: 25px;
+  background-color: $primary-bg-color;
+  width: 85%;
+  text-align: center;
+  border: 1px solid $border-color;
+}
+
+@mixin form {
+  font-size: 1.1em;
+}
+
+.fam {
+  @include form;
+  margin-left: 46px;
+}
+
+.name {
+  @include form;
+  margin-left: 83px;
+}
+
+.otch {
+  @include form;
+  margin-left: 45px;
+}
+
+.age {
+  @include form;
+  margin-left: 21px;
+}
+
+.mzh {
+  @include form;
+  margin-left: 135px;
+}
+
+label, input, span {
+  @include form;
+  margin: 2px;
+}
+
+input {
+  @include form;
+  background-color: $secondary-bg-color;
+}
+
+button {
+  @include form;
+  background-color: $secondary-bg-color;
+  margin-bottom: 5px;
+}
+
+.button {
+  padding-left: 104px;
+}
+
+.container4 {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: auto;
+  width: 85%;
+  margin-left: 25px;
+}
+
+.zagolovok3 {
+  border: 1px solid $border-color;
+  background-color: $primary-bg-color;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  font-size: $font-size;
+  padding: 7px 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.tri {
+  text-align: left;
+
+  > img {
+    width: 108px;
+    height: auto;
+    margin: 6px;
+    margin-top: 3px;
+  }
+}
+
+.xx {
+  grid-column: 1/2;
+}
+
+.ch {
+  grid-column: 2/4;
+}
+
+.foot {
+  display: grid;
+  grid-row: 1/2;
+  border: 1px solid $border-color;
+  font-size: $font-size;
+  padding: 7px 0;
+  text-align: left;
+  margin-left: 35px;
+  margin-right: 35px;
+  background-color: $primary-bg-color;
+}
+
+body {
+  background-color: $secondary-bg-color;
+}
+
+@function font-size($font-size) {
+  @return $font-size * 0.75;
+}

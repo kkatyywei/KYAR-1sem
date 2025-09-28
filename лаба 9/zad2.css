@@ -1,0 +1,77 @@
+.cont {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: 100vh;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: 19%  19% 19% 19% 19%;
+    grid-template-rows: 175px 175px 175px 175px 175px;
+    grid-gap: 3px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: -50px;
+}
+.grid > div {
+    text-align: center;
+    border: thin #c0c0c0 solid;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 220, 227);
+    margin: 0;
+    
+}
+.block9 {
+    grid-row-start:3;
+    grid-row-end:5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.block10 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+p {
+    margin-top: 0;
+    font-size: 15px;
+}
+img {
+    height: 87%;
+    object-fit: cover;
+}
+.block9 img{
+    float:left;
+    width:97%;
+    height:100%;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.gif {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.gi{
+    width: 315px;
+    height: 315px;
+}
+.down {
+    margin-top: 28px;
+    text-align: center;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    overflow: hidden;
+}
+
