@@ -1,0 +1,29 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 205;
+    }
+/*стиль из 1 лр*/
+h1, h2, h3 { color: magenta;
+   font-family: "Monotype Corsiva";
+ }
+ h1{
+    text-align: center;
+ }
+.a1 { color: blueviolet;
+}
+.p1 {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+}
+.p2 {
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+.p3 {
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22pt;
+}

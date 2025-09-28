@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="zad2.css"?>
+<!DOCTYPE catalog[
+    <!ELEMENT catalog (tovar,infa)>
+    <!ELEMENT tovar (product+)>
+    <!ELEMENT product (#PCDATA)>
+    <!ATTLIST product id ID #REQUIRED>
+    <!ELEMENT infa (opisanie+)>
+    <!ELEMENT opisanie (informazia?,brand?,articul?,prise?)>
+    <!ATTLIST opisanie o_id IDREF #REQUIRED>
+    <!ATTLIST opisanie id ID #REQUIRED>
+    <!ELEMENT informazia (#PCDATA)>
+    <!ELEMENT brand (#PCDATA)>
+    <!ELEMENT articul (#PCDATA)>
+    <!ELEMENT prise (#PCDATA)>
+]>
+<catalog>
+    <tovar>
+        <product id="p0">Продукт</product>
+        <product id="p1">Майка</product>
+        <product id="p2">Зипка</product>
+        <product id="p3">Джинсы</product>
+        <product id="p4">Топ</product>
+        <product id="p5">Сумка</product>
+    </tovar>
+    <infa>
+        <opisanie o_id="p0" id="op0">
+            <informazia>Инфа</informazia>
+        </opisanie>
+        <opisanie o_id="p1" id="op1">
+            <brand>Lacoste</brand>
+            <articul>1795230</articul>
+            <prise>50$</prise>
+        </opisanie>
+        <opisanie o_id="p2" id="op2">
+            <brand>Gucci</brand>
+            <articul>4596702</articul>
+            <prise>75$</prise>
+        </opisanie>
+        <opisanie o_id="p3" id="op3">
+            <brand>D &amp; G</brand>
+            <articul>5207918</articul>
+            <prise>895$</prise>
+        </opisanie>
+        <opisanie o_id="p4" id="op4">
+            <brand>MD</brand>
+            <articul>7954361</articul>
+            <prise>229$</prise>
+        </opisanie>
+        <opisanie o_id="p5" id="op5">
+            <brand>LV</brand>
+            <articul>6481546</articul>
+            <prise>350$</prise>
+        </opisanie>
+    </infa>
+</catalog>

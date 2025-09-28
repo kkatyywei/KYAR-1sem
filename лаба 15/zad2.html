@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Данные студента</title>
+    <style>
+        .input-group {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        label {
+            min-width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        button {
+            margin-left: 160px;
+            padding: 0 10px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px; 
+            background-color: #f9f9f9; 
+            width: 40%;
+            font-size: 25px;
+            border: none; 
+        }
+        footer{
+            margin-left: 35.5%;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="border: 1px solid black; width: max-content; justify-self: center; padding: 15px;">
+    <h1>Данные студента</h1>
+    <form>
+        <div class="input-group">
+            <label for="first-name">Имя студента:</label>
+            <input type="text" id="first-name" name="names" placeholder="обязательно заполнить" />
+        </div>
+        <div class="input-group">
+            <label for="last-name">Фамилия:</label>
+            <input type="text" id="last-name" name="last" placeholder="обязательно заполнить" />
+        </div>
+        <div class="input-group">
+            <label for="middle-name">Отчество студента:</label>
+            <input type="text" id="middle-name" name="mid" placeholder="обязательно заполнить" />
+        </div>
+        <div class="input-group">
+            <label for="email">Адрес почты:</label>
+            <input type="text" id="email" name="ema" />
+        </div>
+        <div class="input-group">
+            <label for="phone">Контактный номер:</label>
+            <input type="text" id="phone" name="phn" />
+        </div>
+        <div class="input-group">
+            <label for="faculty">Факультет:</label>
+            <select id="faculty" name="facult">
+                <option></option>
+                <option value="faculty1">ФИТ</option>
+                <option value="faculty2">ТОВ</option>
+                <option value="faculty3">ХТИТ</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="group">Группа:</label>
+            <select id="group">
+                <option></option>
+                <option value="group1">Группа 1</option>
+                <option value="group2">Группа 2</option>
+                <option value="group3">Группа 3</option>
+                <option value="group4">Группа 4</option>
+                <option value="group5">Группа 5</option>
+                <option value="group6">Группа 6</option>
+                <option value="group3">Группа 7</option>
+                <option value="group4">Группа 8</option>
+                <option value="group5">Группа 9</option>
+                <option value="group6">Группа 10</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="course">Курс:</label>
+            <select id="course">
+                <option></option>
+                <option value="course1">Курс 1</option>
+                <option value="course2">Курс 2</option>
+                <option value="course3">Курс 3</option>
+                <option value="course4">Курс 4</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>Какую социальную <br>сеть вы используете?</label>
+            <div>
+                <input type="checkbox" class="checkbox" id="vk" /><label for="vk" class="label">VK</label>
+                <input type="checkbox" class="checkbox" id="facebook" /><label for="facebook" class="label">Facebook</label>
+                <input type="checkbox" class="checkbox" id="instagram" /><label for="instagram" class="label">Instagram</label>
+            </div>
+        </div>
+    </form>
+    <button>Отправить</button>
+</div>
+    <footer id="foot"></footer>
+</body>
+<script>
+    let d = "";
+    document.querySelector("button").addEventListener("click", function () {
+        for (i = 0; document.forms[0].elements[i].tagName == "INPUT"; i++) {
+            if (document.forms[0].elements[i].value != "") {
+                d += document.forms[0].elements[i].value + " ";
+            }
+        }
+        foot.innerHTML = d;
+    });
+    document.querySelector("button").addEventListener("click", function () {
+        let opt = document.querySelectorAll("select");
+        for (let i = 0; i < opt.length; i++) {
+            let po = opt[i].selectedOptions[0];
+            let foot = document.getElementById("foot");
+            foot.textContent = foot.textContent + " " + po.textContent;
+        }
+    });
+    document.querySelector("button").addEventListener("click", function () {
+        let check = document.querySelectorAll(".checkbox");
+        for (let i = 0; i < check.length; i++) {
+            if (check[i].checked) {
+                let t = document.getElementById(check[i].id);
+                let lab = t.nextElementSibling;
+                let foot = document.getElementById("foot");
+                foot.textContent = foot.textContent + " " + lab.textContent;
+            }
+        }
+    });
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="zad2.xsl"?>
+<students>
+    <student>
+        <name>кто-то 1</name>
+        <subject>Матем</subject>
+        <grade>3</grade>
+    </student>
+    <student>
+        <name>кто-то 2</name>
+        <subject>Физика</subject>
+        <grade>9</grade>
+    </student>
+    <student>
+        <name>кто-то 3</name>
+        <subject>Химия</subject>
+        <grade>7</grade>
+    </student>
+    <student>
+        <name>кто-то 4</name>
+        <subject>Биология</subject>
+        <grade>4</grade>
+    </student>
+        <student>
+        <name>кто-то 5</name>
+        <subject>Физика</subject>
+        <grade>5</grade>
+    </student>
+        <student>
+        <name>кто-то 6</name>
+        <subject>Химия</subject>
+        <grade>5</grade>
+    </student>
+        <student>
+        <name>кто-то 7</name>
+        <subject>Химия</subject>
+        <grade>2</grade>
+    </student>
+        <student>
+        <name>кто-то 8</name>
+        <subject>Биология</subject>
+        <grade>1</grade>
+    </student>
+        <student>
+        <name>кто-то 9</name>
+        <subject>Матем</subject>
+        <grade>10</grade>
+    </student>
+</students>

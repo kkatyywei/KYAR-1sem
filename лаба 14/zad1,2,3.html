@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>zad1,2,3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="700">
+        <path id="txt" d="m20,35 h50 v60 h90 a50,60 -30 0,1 150,30 m150,50" stroke="red" stroke-width="3" fill="none"></path>
+        <text font-size="36" fill="blue">
+            <textPath xlink:href="#txt" startOffset="50%" text-anchor="middle">эх...коты</textPath>
+        </text>
+
+        <circle cx="80" cy="200" r="40" fill="blue" />
+        <rect x="135" y="170" width="80" height="70" fill="red"/>
+        <ellipse cx="300" cy="200" rx="70" ry="40" fill="green" />
+        <polygon points="365,245 415,170 465,245" fill="yellow"/>
+        <polyline points="40,260 260,260 190,290 470,290" fill="none" stroke="purple" stroke-width="2" />
+        
+        <polyline points="150,390 200,330 250,390 220,390 270,460 220,460 220,495 180,495 180,495 180,460 130,460 180,390 150,390" fill="none" stroke="green" stroke-width="2" />
+        <path id="red" d="m 175 380 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0" fill="red">
+            <animate attributeName="fill" values="red;blue;yellow;purple;pink;red" dur="5s" repeatCount="indefinite" />
+        </path>
+        <path d="m 200 355 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0" fill="blue">
+            <animate attributeName="fill" values="blue;yellow;purple;pink;red;blue" dur="5s" repeatCount="indefinite" />
+        </path> 
+        <path d="m 190 410 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0" fill="yellow">
+            <animate attributeName="fill" values="yellow;purple;pink;red;blue;yellow" dur="5s" repeatCount="indefinite" />
+        </path> 
+        <path d="m 155 440 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0" fill="purple">
+            <animate attributeName="fill" values="purple;pink;red;blue;yellow;purple" dur="5s" repeatCount="indefinite" />
+        </path>
+        <path d="m 220 440 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0" fill="pink">
+            <animate attributeName="fill" values="pink;red;blue;yellow;purple;pink" dur="5s" repeatCount="indefinite" />
+        </path>
+    </svg>
+</body>
+</html>

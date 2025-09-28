@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="zad3.css" type="text/css"?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <tovar>
+        <product id="p0">Продукт</product>
+        <product id="p1">Майка</product>
+        <product id="p2">Зипка</product>
+        <product id="p3">Джинсы</product>
+        <product id="p4">Топ</product>
+        <product id="p5">Сумка</product>
+    </tovar>
+    <infa>
+        <opisanie id="op0">
+            <informazia>Инфа</informazia>
+        </opisanie>
+        <opisanie id="op1">
+            <brand>Lacoste</brand>
+            <articul>1795230</articul>
+            <prise>50$</prise>
+        </opisanie>
+        <opisanie id="op2">
+            <brand>Gucci</brand>
+            <articul>4596702</articul>
+            <prise>75$</prise>
+        </opisanie>
+        <opisanie id="op3">
+            <brand>D &amp; G</brand>
+            <articul>5207918</articul>
+            <prise>895$</prise>
+        </opisanie>
+        <opisanie id="op4">
+            <brand>MD</brand>
+            <articul>7954361</articul>
+            <prise>229$</prise>
+        </opisanie>
+        <opisanie id="op5">
+            <brand>LV</brand>
+            <articul>6481546</articul>
+            <prise>350$</prise>
+        </opisanie>
+    </infa>
+</catalog>

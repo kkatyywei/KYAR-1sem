@@ -1,0 +1,49 @@
+$border-color: black;
+$table-width: 205px;
+$monotype-corsiva: "Monotype Corsiva";
+$times-new-roman: 'Times New Roman', Times, serif;
+$arial: Arial, Helvetica, sans-serif;
+
+table {
+    border: 1px solid $border-color;
+    border-collapse: collapse;
+    width: $table-width;
+}
+
+// Стиль из 1 лр
+h1, h2, h3 {
+    color: magenta;
+    font-family: $monotype-corsiva;
+}
+
+h1 {
+    text-align: center;
+}
+
+.a1 {
+    color: blueviolet;
+}
+
+.p1 {
+    color: red;
+    font-family: $times-new-roman;
+    font-size: 18pt;
+}
+
+.p2 {
+    color: yellow;
+    font-family: $times-new-roman;
+    font-size: 20pt;
+}
+
+.p3 {
+    color: green;
+    font-family: $times-new-roman;
+    font-size: 22pt;
+}
+
+p {
+    color: blue;
+    font-family: $arial;
+    font-size: 16pt;
+}
